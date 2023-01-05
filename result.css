@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(207, 233, 240);
+}
+.main{
+    width: 850px;
+    height: 600px;
+    background-color: white;
+    margin:100px 50px;
+    margin-left: 150px;
+    border-radius: 12px;
+
+}
+.sub-main{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 520px;
+    background-color: hsl(243, 100%, 62%);
+    border-radius: 15px;
+    padding: 25px;
+    position: absolute;
+    top: 120px;
+}
+.next-btn button{
+    width: 40px;
+    background: transparent;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-weight: 800;
+}
+.next-btn h1{
+    font-size: 15px;
+    color: hsl(231, 11%, 63%);
+    margin-left: 58px;
+    margin-top: -35px;
+    text-transform: capitalize;
+}
+.next-btn h2{
+    font-size: 18px;
+    color: white;
+    margin-left: 58px;
+    text-transform: capitalize;
+}
+.next-btn button:focus{
+    background:  hsl(161, 26%, 48%)
+}
+.img p{
+    color: #444;
+}
+#moth{
+    font-weight: 800;
+}
+#muth{
+    font-weight: 800;
+}
+.img h1{
+    color: rgb(20, 4, 57);
+}
+#create-account{
+    margin-left: 350px;
+    position: absolute;
+    top: 120px;
+    margin-top: 60px;
+}
+.title h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: hsl(277, 75%, 17%);
+}
+.title h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: hsla(120, 6%, 90%, 0.757);
+}
+.input-group{
+    margin: 20px 0;
+}
+.input-group label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.input-group input{
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.input-group p{
+    font-size: 15px;
+    color: red;
+    visibility: hidden;
+}
+.btn{
+    padding: 10px;
+    width: 50%;
+    font-size: 20px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+}
+.sucess input{
+    border: 3px solid green;
+}
+
+.error input{
+    border: 3px solid red;
+}
+.error p{
+    visibility: visible;
+}
+
+.container{
+    margin-left: 300px;
+    position: absolute;
+    top: 120px;
+}
+.img{
+    width: 150px;
+    line-height: 60px;
+    margin-right: 20px;
+    padding: 12px;
+    border-radius: 13px;
+    border: 2px solid rgb(101, 101, 154);
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step-two h1{
+    font-size: 25px;
+    color: hsl(277, 64%, 15%);
+    margin-bottom: 8px;
+}
+.step-two h2{
+    font-size: 19px;
+    color: gray;
+    margin-bottom: 25px;
+}
+.img h1{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.fa-regular{
+    color: red;
+}
+.icon{
+    width: 250px;
+    background-color: rgb(184, 219, 219);
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.fa-solid{
+    padding-right: 10px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0 px;
+}
+.containers{
+    position: absolute;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers .toggle{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50px;
+    height: 30px;
+    background: #444;
+    margin-top: 13px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+.containers .toggle .toggle-button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.containers .toggle.active{
+    background: cornflowerblue;
+}
+.containers .toggle.active .toggle-button{
+    left: 27px;
+}
+.input-add-ons a{
+    text-decoration: none;
+    outline: none;
+}
+
+.main-containers{
+    width: 290px;
+    background-color: aqua;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers p{
+     margin-right: 80px;
+}
+
+.toggle-button.active{
+    left: 45px;
+    background: blue;
+}
+.select-plan{
+    margin-top: 35px;
+    position: absolute;
+    left: 650px;
+    top: 600px;
+}
+.select-plan a{
+    text-decoration: none;
+    color:  rgb(39, 7, 69);
+    outline: none;
+    position: absolute;
+    left: -200px;
+}
+.select-plan button{
+    left: 200px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(39, 7, 69);
+    border: none;
+}
+.hr{
+        border: none;
+        border-top: 1px dotted hsl(243, 100%, 62%);
+        color: #fff;
+        background-color: #fff;
+        height: 1px;
+        width: 100%;    
+}
+
+.add-ons{
+    margin-left: 350px;
+    position: absolute;
+    top: 160px;
+}
+.step-three-main{
+    margin-left: 350px;
+    position: absolute;
+    top: 160px;
+}
+.sub-add-ons h1{
+    font-size: 25px;
+    color: hsl(277, 64%, 15%);
+    margin-bottom: 8px;
+}
+.sub-add-ons h2{
+    font-size: 19px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+
+.input-add-ons{
+    width: 340px;
+    margin-bottom: 20px;
+    height: 100px;
+    border-radius: 14px;
+    border: 2px solid rgb(41, 130, 144);
+    padding: 20px;
+}
+.input-add-ons h4{
+    margin-left: 35px;
+    margin-top: -23px;
+    color :hwb(277 5% 75%);
+}
+.input-add-ons h5{
+    margin-left: 35px;
+    color: gray;
+}
+#link1{
+    margin-left: 240px;
+    position: absolute;
+    top: 120px;
+}
+#link2{
+    margin-left: 240px;
+    position: absolute;
+    top: 240px;
+}
+#link3{
+    margin-left: 240px;
+    position: absolute;
+    top: 360px;
+}
+.img:hover{
+    border: 3px solid rgb(50, 86, 185);
+}
+.step-three-sub-main h1{
+    font-size: 25px;
+    color: hsl(277, 64%, 15%);
+    margin-bottom: 8px;
+}
+
+.step-three-sub-main h2{
+    font-size: 19px;
+    color: gray;
+    margin-bottom: 25px;
+}
+.big-box h1{
+    color: hsl(277, 64%, 15%);
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.big-box p{
+    position: absolute;
+    left: 350px;
+    top: 135px;
+    color: hsl(268, 74%, 18%);
+    font-weight: 800;
+}
+.second-box small{
+    position: absolute;
+    left: 350px;
+}
+.second-box-two small{
+    position: absolute;
+    left: 350px;
+}
+.big-box{
+    width: 450px;
+    height: 200px;
+    border-radius: 12px;
+    border-style: none;
+    margin-top: 50px;
+    background-color: hsl(228, 100%, 84%);
+    padding: 20px;
+}
+
+.total{
+    margin-top: 40px;
+}
+.total h1{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 10px;
+    position: absolute;
+    top: 350px;
+   color:  hsl(229, 24%, 87%);
+}
+.total h2{
+    position: absolute;
+    left: 350px;
+    color: rgb(53, 8, 112);
+    font-size: 23px;
+    top: 350px;
+}
+.second-box{
+    margin-top: 25px;
+}
+.second-box small{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    color: rgb(53, 8, 112);
+}
+.second-box-two small{
+    position: absolute;
+    color: rgb(53, 8, 112);
+    left: 350px;
+}
+.second-box-two h1{
+    color: hsl(231, 11%, 63%);
+    font-size: 15px;
+}
+
+.second-box h1{
+    color: hsl(231, 11%, 63%);
+    position: absolute;
+    top: 220px;
+    font-size: 15px;
+}
+.thanks{
+    position: absolute;
+    left: 330px;
+    top: 240px;
+}
+
+.img-thanks{
+    position: absolute;
+    left: 280px;
+}
+.thanks h1{
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    color:  hsl(268, 74%, 18%);
+    white-space: nowrap;
+}
+.thanks h2{
+    position: absolute;
+    left: 190px;
+    display: inline-block;
+    top: 160px;
+    color: gray;
+    font-size: 16px;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+

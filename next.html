@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="result.css">
+   <link rel="stylesheet" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplayer</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sub-main">
+          
+            <div class="next-btn">
+                <button onclick="window.open('result.html','_self')">1</button>
+                <h1>Step 1</h1>
+                <h2>Your info</h2>
+            </div>
+
+            <div class="next-btn">
+                <button>2</button>
+                <h1>Step 2</h1>
+                <h2>Select plans</h2>
+            </div>
+
+            <div class="next-btn">
+                <button onclick="window.open('add.html','_self')">3</button>
+                <h1>Step 3</h1>
+                <h2>Add-ons</h2>
+            </div>
+
+            <div class="next-btn">
+                <button onclick="window.open('last.html','_self')">4</button>
+                <h1>Step 4</h1>
+                <h2>Summary</h2>
+            </div>
+        </div>
+
+
+         <div class="container">
+            <div class="step-two">
+                <h1>Select your plan</h1>
+                <h2 >You have the option of monthly or yearly billing</h2>
+            </div>
+            
+            <div class="img-container">
+                <div class="img">
+                    <img src="assets/images/icon-arcade.svg" alt="">
+                    <h1>Arcade</h1>
+                    <p id="par">$9/mon</p>
+                </div>
+    
+    
+                <div class="img">
+                    <img src="assets/images/icon-advanced.svg" alt="">
+                    <h1>Advanced</h1>
+                    <p id="par1">$12/mon</p>
+                </div>
+                
+                    <div class="img">
+                        <img src="assets/images/icon-pro.svg" alt="">
+                        <h1>Pro</h1>
+                        <p id="par2">$15/mon</p>
+                    </div>
+    
+    
+            </div>
+         
+           <div class="main-containers">
+            <div class="containers">
+                <p id="muth">Yearly</p>
+                <div class="toggle">
+
+                    <div class="toggle-button" onclick="animatedToggle()"></div>
+                </div>
+                <p id="moth">Monthly</p>
+            </div>
+           </div>
+            
+
+         
+         </div>
+    
+    <div class="select-plan">
+     <a href="index.html">Go Back</a>
+     <button type="submit" onclick="window.open('add.html','_self')" class="">Next Step</button>
+
+    </div>
+       
+
+    </div>
+   <script >
+
+    let toggle = document.querySelector('.toggle');
+ function animatedToggle(){
+     toggle.classList.toggle("active");
+
+     let par = document.getElementById('par');
+     let parOne = document.getElementById('par1');
+     let parTwo = document.getElementById('par2');
+     let moth = document.getElementById('moth');
+     let muth = document.getElementById('muth');
+
+
+
+
+     if (toggle.classList.contains('active')) {
+        par.textContent = "$9/mon"
+        parOne.textContent = "$12/mon"
+        parTwo.textContent = "$15/mon"
+        muth.style.color = 'gray'
+        moth.style.color = 'black'
+     }else{
+        par.textContent = "$90/yr"
+        parOne.textContent = "$120/yr"
+        parTwo.textContent = "$150/yr"
+        moth.style.color = 'gray'
+        muth.style.color = 'black'
+     }
+
+ }
+
+   </script>
+ <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ejiro osiephri</a>.
+  </div>
+</body>
+</html>
