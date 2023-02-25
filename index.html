@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="result.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="result.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>multiplayer</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="sub-main">
-          
-            <div class="next-btn">
-                <button >1</button>
-                <h1>Step 1</h1>
-                <h2>Your info</h2>
-            </div>
-
-            <div class="next-btn">
-                <button onclick="window.open('next.html','_self')">2</button>
-                <h1>Step 2</h1>
-                <h2>Select plans</h2>
-            </div>
-
-            <div class="next-btn">
-                <button onclick="window.open('add.html','_self')">3</button>
-                <h1>Step 3</h1>
-                <h2>Add-ons</h2>
-            </div>
-
-            <div class="next-btn">
-                <button onclick="window.open('last.html','_self')">4</button>
-                <h1>Step 4</h1>
-                <h2>Summary</h2>
-            </div>
-
-
+      <div class="sub-main">
+        <div class="next-btn">
+          <button>1</button>
+          <h1>Step 1</h1>
+          <h2>Your info</h2>
         </div>
 
+        <div class="next-btn">
+          <button onclick="window.open('next.html','_self')">2</button>
+          <h1>Step 2</h1>
+          <h2>Select plans</h2>
+        </div>
 
-        <form id="create-account" action="next.html" method="get">
-            <div class="title">
-                <h1>Personal info</h1>
-                <h2>Please provide your name, email address, and phone number.</h2>
-            </div>
-    
-            <div class="input-group ">
-                <label for="username">Name</label>
-                <input type="text" name="username" id="username" placeholder="e.g. Stephen King">
-                <p>Error Message</p>
-            </div>
-    
-            <div class="input-group">
-                <label for="email">Email Adress</label>
-                <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
-                <p>Error Message</p>
-            </div>
+        <div class="next-btn">
+          <button onclick="window.open('add.html','_self')">3</button>
+          <h1>Step 3</h1>
+          <h2>Add-ons</h2>
+        </div>
 
-            <div class="input-group">
-                <label for="number">Phone Number</label>
-                <input type="number" name="number" id="number" placeholder="e.g. +1 234 567 890">
-                <p>Error Message</p>
-            </div>
-    
-           
-    
-         <button type="submit" class="btn">Next Step</button>
-        </form>
-    
+        <div class="next-btn">
+          <button onclick="window.open('last.html','_self')">4</button>
+          <h1>Step 4</h1>
+          <h2>Summary</h2>
+        </div>
+      </div>
 
-       
+      <form id="create-account" action="next.html" method="get">
+        <div class="title">
+          <h1>Personal info</h1>
+          <h2>Please provide your name, email address, and phone number.</h2>
+        </div>
 
+        <div class="input-group">
+          <label for="username">Name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="e.g. Stephen King"
+          />
+          <p>Error Message</p>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Adress</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="e.g. stephenking@lorem.com"
+          />
+          <p>Error Message</p>
+        </div>
+
+        <div class="input-group">
+          <label for="number">Phone Number</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="e.g. +1 234 567 890"
+          />
+          <p>Error Message</p>
+        </div>
+
+        <button type="submit" class="btn">Next Step</button>
+      </form>
     </div>
-   <script src="result.js"></script>
-</body>
+    <script src="result.js"></script>
+  </body>
 </html>
